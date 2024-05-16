@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test1(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="Tests.beCognizantTest">
+        <methods>
+          <include name="userInformation"/>
+        </methods>
+      </class> <!-- Tests.beCognizantTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test thread-count="5" name="Test2(failed)">
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="Tests.OneCognizantTest">
+        <methods>
+          <include name="welcomeMsgValidation"/>
+          <include name="allCountry"/>
+          <include name="allLanguage"/>
+          <include name="toolPins"/>
+          <include name="gsdSearch"/>
+          <include name="validateDefaultLanguage"/>
+          <include name="validateDefaultCountry"/>
+        </methods>
+      </class> <!-- Tests.OneCognizantTest -->
+      <class name="Tests.beCognizantTest">
+        <methods>
+          <include name="windowHandle"/>
+          <include name="userInformation"/>
+          <include name="navigatingToOneCognizant"/>
+        </methods>
+      </class> <!-- Tests.beCognizantTest -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
